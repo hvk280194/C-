@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <iostream>
 
-Game::Game(Board* board) :
+Game::Game(Board* board):
 	board_(board)
 {}
 

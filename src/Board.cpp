@@ -4,7 +4,7 @@
 void Board::init() {
 	mark_ = 'X';
 	int digit = 1;
-	for (auto line = ; line < SIZE; line++) {
+	for (auto line = 0; line < SIZE; line++) {
 		for (auto column = 0; column < SIZE; column++) {
 			board_[line][column] = DIGITS[digit++];
 		}

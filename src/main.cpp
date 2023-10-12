@@ -4,7 +4,7 @@
 
 int main() {
 	Board* board = new Board();
-	Game game(Board);
+	Game game(board);
 	game.run();
 
 	delete board;

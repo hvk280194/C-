@@ -7,7 +7,8 @@ class Game {
 public:
 	Game(Board* board);
 	~Game() = default;
+	void run();
 private:
-	Board* board;
+	Board* board_;
 };
 #endif // !_GAME_H_
