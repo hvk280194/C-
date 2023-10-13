@@ -5,16 +5,16 @@ void Board::initialize() {
 	mark_ = 'X';
 	int digit = 1;
 
-	for (int line = 0; line < SIZE; line++) {
-		for (int column = 0; column < SIZE; column++) {
+	for (int line = 0; line < MY_SIZE; line++) {
+		for (int column = 0; column < MY_SIZE; column++) {
 			board_[line][column] = DIGITS[digit++];
 		}
 	}
 }
 
 void Board::draw() {
-	for (int line = 0; line < SIZE; line++) {
-		for (int column = 0; column < SIZE; column++) {
+	for (int line = 0; line < MY_SIZE; line++) {
+		for (int column = 0; column < MY_SIZE; column++) {
 			std::cout << "| " << board_[line][column] << " ";
 		}
 		std::cout << "| \n";
@@ -46,8 +46,8 @@ bool Board::check() {
 bool Board::update(int position) {
 	bool updated = false;
 
-	for (int line = 0; line < SIZE; line++) {
-		for (int column = 0; column < SIZE; column++) {
+	for (int line = 0; line < MY_SIZE; line++) {
+		for (int column = 0; column < MY_SIZE; column++) {
 			if (board_[line][column] == DIGITS[position]) {
 				board_[line][column] = mark_;
 				updated = true;

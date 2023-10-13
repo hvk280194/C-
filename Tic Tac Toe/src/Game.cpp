@@ -28,7 +28,7 @@ void Game::run() {
 			if (board_->check()) {
 				board_->draw();
 				std::cout << "\nPlayer" << (move % 2 == 0 ? "1" : "2")<<"won!!!";
-				
+				std::cin.get();
 				break;
 			}
 			else if (move == 8) {

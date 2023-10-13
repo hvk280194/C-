@@ -1,7 +1,7 @@
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
-constexpr int SIZE = 3;
+constexpr int MY_SIZE = 3;
 constexpr char DIGITS[] = { '0','1','2', '3', '4', '5', '6', '7', '8', '9' };
 
 class Board {
@@ -23,7 +23,7 @@ public:
 	 
 
 private:
-	char board_[SIZE][SIZE];
+	char board_[MY_SIZE][MY_SIZE];
 	char mark_;
 };
 
